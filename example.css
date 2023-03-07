@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 0;
+}
+
+.amount{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amount .amount_value{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid white;
+    color: lightcoral;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+.container{
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    gap: 50px 0;
+    padding: 25px;
+}
+
+.container form{
+    width: 60%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 20px 0;
+}
+
+form input{
+    width: 100%;
+    border: 1px solid darkorange;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+form input::placeholder{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+form .add{
+    color: white;
+    width: 100%;
+    background-color: darkorange;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.container .display{
+    width: 60%;
+    height: 200px;
+    background-color: lightcoral;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.display .items{
+    width: 70%;
+    height: 150px;
+    background-color: white;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkorange;
+    padding: 10px;
+}
+
+.items ul{
+    width: 100%;
+    height: fit-content;
+    list-style: none;
+    color: darkorange;
+}
+
+.view_cart{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view_cart .view_btn{
+    width: fit-content;
+    padding: 10px;
+    color: black;
+    background-color: lime;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+@media(max-width: 650px){
+    body{
+        width: 100%;
+        height: 100vh;
+    }
+    .container{
+        width: 90%;
+    }
+
+    .container form{
+        width: 100%;
+    }
+
+    .container .display{
+        width: 100%;
+    }
+
+    .display .items{
+        width: 90%;
+    }
+}
